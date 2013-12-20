@@ -1,28 +1,24 @@
 {
     "manifest_version": 2,
-    "name": "Console Log to File",
-    "description": "This extension demonstrates a browser action with kittens.",
-    "version": "1.0",
+    "name": "Chrome Console Saver",
+    "description": "When open, this extension will capture all console log events and AJAX requests and generate a downloadable file when the page changes.",
+    "version": "0.1",
     "devtools_page": "debugger.html",
-	"permissions": [
-		"tabs",
-		"http://*/*",
-		"https://*/*"
-	],
-	"background": {
-		"scripts": ["scripts/background.js"]
-	},
-    /*
     "permissions": [
-        "http://github.com/*",
-        "unlimitedStorage"
+	    "tabs",
+	    "http://*/*",
+	    "https://*/*"
     ],
-    */
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
+    "background": {
+	    "scripts": ["scripts/background.js"]
     },
-    /*
+	"options_page": "options.html"
+	/*
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
     "content_scripts": [{
         "matches": ["http://dev.pop.co/*", "https://dev.pop.co/*"],
         "js": ["content.js"],
